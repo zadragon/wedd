@@ -1,8 +1,7 @@
 import { format, parseISO, getDay } from 'date-fns'
 
-import classNames from 'classnames'
+import classNames from 'classnames/bind'
 import styles from './Heading.module.scss'
-
 import Section from '@shared/Section'
 
 const cx = classNames.bind(styles)
@@ -24,7 +23,7 @@ const Heading = ({ date }: { date: string }) => {
   const subTitle = days[getDay(weddingDate)]
 
   return (
-    <Section className={cx()}>
+    <Section className={cx('container')}>
       <div className={cx('txt-date')}>{title}</div>
       <div className={cx('txt-day')}>{subTitle}</div>
     </Section>
