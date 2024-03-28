@@ -14,6 +14,8 @@ const Video = () => {
         loop={true}
         poster="assets/poster.jpg"
       >
+        {/* 웹엠을 먼서 사용 */}
+        <source src="/assets/main.webm" type="video/webm"></source>
         <source src="/assets/main.mp4" type="video/mp4"></source>
       </video>
     </Section>
