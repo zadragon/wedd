@@ -1,4 +1,4 @@
-//@import '@scss/variable.scss';
+@import '@scss/variable.scss';
 
 .dimmed {
   position: fixed;
@@ -7,5 +7,5 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  //z-index: $dimmed-zindex;
+  z-index: $dimmed-zindex;
 }
