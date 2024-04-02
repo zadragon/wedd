@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import classNames from 'classnames/bind'
@@ -86,4 +86,4 @@ function CloseButton({
   )
 }
 
-export default ImageViewer
+export default memo(ImageViewer)
